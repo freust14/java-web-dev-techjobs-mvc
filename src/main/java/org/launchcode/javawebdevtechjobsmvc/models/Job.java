@@ -29,7 +29,7 @@ public class Job {
         coreCompetency = aCoreCompetency;
     }
 
-    // Custom toString method.
+//     Custom toString method.
     @Override
     public String toString(){
         String output = "";
@@ -49,14 +49,16 @@ public class Job {
             positionType.setValue("Data not available");
         }
 
-        output = String.format("\nID: %d\n" +
-                "Name: %s\n" +
+        output = String.format("\nID: %d\n\n" +
+                "Name: %s\n\n" +
                 "Employer: %s\n" +
                 "Location: %s\n" +
                 "Position Type: %s\n" +
                 "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
         return output;
     }
+
+
 
     // Custom equals and hashCode methods. Two Job objects are "equal" when their id fields match.
     @Override
