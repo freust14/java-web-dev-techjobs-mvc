@@ -14,22 +14,22 @@
     <th:block  th:each="job : ${jobs}">
         <table class="job-listing" >
             <tr>
-                <td>ID</td><td th:text="${job.getId()}"></td>
+                <td class="centered">ID</td><td class="centered" th:text="${job.getId()}"></td>
             </tr>
             <tr>
-                <td>Name</td><td th:text="${job.getName()}"></td>
+                <td class="centered">Name</td><td class="centered" th:text="${job.getName()}"></td>
             </tr>
             <tr>
-                <td>Employer</td><td th:text="${job.getEmployer().getValue()}"></td>
+                <td class="centered">Employer</td><td class="centered" th:text="${job.getEmployer().getValue()}"></td>
             </tr>
             <tr>
-                <td>Location</td><td th:text="${job.getLocation().getValue()}"></td>
+                <td class="centered">Location</td><td class="centered" th:text="${job.getLocation().getValue()}"></td>
             </tr>
             <tr>
-                <td>Position Type</td><td th:text="${job.getPositionType().getValue()}"></td>
+                <td class="centered">Position Type</td><td class="centered" th:text="${job.getPositionType().getValue()}"></td>
             </tr>
             <tr>
-                <td>Skill</td><td th:text="${job.getCoreCompetency().getValue()}"></td>
+                <td class="centered">Skill</td><td class="centered" th:text="${job.getCoreCompetency().getValue()}"></td>
             </tr>
         </table>
     </th:block>
