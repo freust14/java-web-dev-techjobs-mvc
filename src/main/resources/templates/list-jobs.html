@@ -21,20 +21,24 @@
             </tr>
 
             <tr>
-                <td class="centered">Employer</td><td class="centered"><a th:href="@{/list/jobs(column='employer',value=${job.getEmployer().getValue()})}"
-                                                                          th:text="${job.getEmployer().getValue()}"></a></td>
+                <td class="centered">Employer</td>
+                <td class="centered"><a th:href="@{/list/jobs(column='employer',
+                value=${job.getEmployer().getValue()})}" th:text="${job.getEmployer().getValue()}"></a></td>
             </tr>
             <tr>
-                <td class="centered">Location</td><td class="centered"><a th:href="@{/list/jobs(column='location',value=${job.getLocation().getValue()})}"
-                                                                          th:text="${job.getLocation().getValue()}"></a></td>
+                <td class="centered">Location</td>
+                <td class="centered"><a th:href="@{/list/jobs(column='location',
+                value=${job.getLocation().getValue()})}"th:text="${job.getLocation().getValue()}"></a></td>
             </tr>
             <tr>
-                <td class="centered">Position Type</td><td class="centered"><a th:href="@{/list/jobs(column='positionType',value=${job.getPositionType().getValue()})}"
-                                                                               th:text="${job.getPositionType().getValue()}"></a></td>
+                <td class="centered">Position Type</td>
+                <td class="centered"><a th:href="@{/list/jobs(column='positionType',
+                value=${job.getPositionType().getValue()})}" th:text="${job.getPositionType().getValue()}"></a></td>
             </tr>
             <tr>
-                <td class="centered">Skill</td><td class="centered"><a th:href="@{/list/jobs(column='coreCompetency',value=${job.getCoreCompetency().getValue()})}"
-                                                                       th:text="${job.getCoreCompetency().getValue()}"></a></td>
+                <td class="centered">Skill</td>
+                <td class="centered"><a th:href="@{/list/jobs(column='coreCompetency',
+                value=${job.getCoreCompetency().getValue()})}" th:text="${job.getCoreCompetency().getValue()}"></a></td>
             </tr>
         </table>
         </th:block>
